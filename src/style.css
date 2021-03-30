@@ -1,0 +1,349 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #3D41A7;
+  color: #F4F5F6;
+}
+
+code {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.header {
+  height: 60px;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background: #3D41A7;
+  font-size: 18px;
+  font-weight: 300;
+  white-space: nowrap;
+}
+
+.header-container {
+  height: 100%;
+  width: 100%;
+  max-width: 1074px;
+  display: flex;
+  border-bottom: 2px solid #6DA0D3;
+}
+
+.logo {
+  transition: background-color 300ms;
+  padding: 0 5%;
+  user-select: none;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 99.1%;
+  color: #F4F5F6;
+  display: flex;
+  align-items: center;
+}
+.logo1 {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 40%;
+  letter-spacing: -0.2em;
+}
+.logo2 {
+  letter-spacing: 0.1em;
+  margin-left: 5px;
+  font-weight: normal;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex:1;
+}
+
+
+.header-phone {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 5%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+
+}
+.header-phone img {
+  height: 36px;
+  width: 36px;
+}
+
+
+
+.body {
+  font-weight: 800;
+  font-size: 18px;
+  color: #F4F5F6;
+  margin-top: 120px;
+  /*background-color: lightgreen;*/
+}
+
+.image-start {
+
+}
+
+.body-container {
+  margin: 0 auto 50px;
+  display: flex;
+  max-width: 1074px;
+}
+
+.start-text {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 29px;
+}
+
+.button-master {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 33px;
+  outline: none;
+  border: none;
+  width: 200px;
+  height: 70px;
+  cursor: pointer;
+  margin-top: 36px;
+  background: linear-gradient(99.79deg, #FB5A27 21.83%, #FF7223 75.26%);
+  box-shadow: 0 7px 28px #FC6126;
+  border-radius: 120px;
+  color: #F4F5F6;
+}
+.button:hover {
+  box-shadow: 1px 9px 32px #FC6126;
+}
+.button:active {
+  background: linear-gradient(99.79deg, #ED3900 21.83%, #E7420E 75.26%);
+  box-shadow: none;
+}
+
+.body2 {
+  font-weight: 800;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #F4F5F6;
+  color: #3D41A7;
+}
+
+/*МЫ ГАРАНТИРУЕМ*/
+
+.text-garant {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 36px;
+  line-height: 99.1%;
+  color: #3D41A7;
+  margin-top: 45px;
+  margin-bottom: 30px;
+}
+
+.garantee {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1157px;
+  flex-wrap: wrap;
+}
+.we-offer-main-text {
+  display: flex;
+  align-items: flex-start;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  margin: 15px;
+  /*background-color: lightgreen;*/
+  width: 300px;
+}
+.we-offer-main-text svg {
+  /*background-color: dimgrey;*/
+  margin-top: 2px;
+  margin-right: 18px;
+  flex-shrink: 0;
+}
+
+.we-offer-minor-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  margin-top: 3px;
+}
+
+.we-offer-text {
+  display: flex;
+  flex-direction: column;
+  max-width: 1074px;
+}
+
+/*Услуги сервиса ремонта компьютерной техники PC helper*/
+
+.text-services {
+  font-size: 36px;
+  line-height: 99.1%;
+  color: #3D41A7;
+  margin-top: 45px;
+  margin-bottom: 45px;
+  text-align: center;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1157px;
+  margin-right: 10px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+.block {
+  background-color: #E5E5E5;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 345px;
+  height: 245px;
+  margin: 15px;
+  justify-content: center;
+}
+
+.block svg {
+  margin-bottom: 18px;
+  fill: #3D41A7;
+  transition: fill 400ms;
+  flex-shrink: 0;
+}
+
+.block:hover svg{
+  fill: #FE6A25;
+}
+.text-block-minor {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 99.1%;
+  text-align: center;
+  color: #FE6A25;
+}
+
+.text-block {
+  margin-bottom: 12px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 99.1%;
+  text-align: center;
+  color: #3D41A7;
+}
+
+/*Компьютерная помощь по низким ценам*/
+
+.text-prices {
+  text-align: center;
+  font-size: 36px;
+  line-height: 99.1%;
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.block-help {
+  display: flex;
+  width: 100%;
+  background-color: #F4F5F6;
+  border-bottom: 1px solid #6DA0D3;
+  padding: 7px;
+  align-items: center;
+}
+
+.block-help svg {
+  min-width: 45px;
+}
+
+.text-prices-major {
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 33px;
+  color: #3D41A7;
+  padding-left: 15px;
+  flex: 1;
+}
+.text-prices-minor {
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 33px;
+  color: #3D41A7;
+}
+
+
+.prices {
+  background-color: #F4F5F6;
+  width: 100%;
+  max-width: 1157px;
+  margin: 0 auto;
+  padding: 30px;
+
+}
+
+.body3 {
+  margin-bottom: 70px;
+}
+
+.header-container-mob {
+  display: none;
+}
+
+.text-describe {
+  margin-bottom: 25px;
+  text-align: center;
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  color: #3D41A7;
+}
+@media (max-width: 750px) {
+  .header-container-mob {
+      display: flex;
+  }
+  .header-container {
+    display: none;
+  }
+  .logo {
+    padding: 0;
+  }
+  .image-start {
+    display: none;
+  }
+  .remont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .remont h1 {
+    text-align: center;
+  }
+  .start-text {
+    padding: 20px;
+  }
+}
+
+

@@ -1,0 +1,110 @@
+/*.main {*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    justify-content: center;*/
+/*    height: 100vh;*/
+/*}*/
+
+.item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 210px;
+    height: 257px;
+    background-color: white;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.slider {
+    position: relative;
+    margin: 30px auto; /*******************/
+    max-width: 210px;
+    min-height: 257px;
+}
+
+/*.slider::after {*/
+/*    content: '';*/
+/*    display: block;*/
+/*    width: 100%;*/
+/*    height: 257px;*/
+/*    outline: 5px solid dodgerblue;*/
+/*    position: absolute;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*}*/
+
+.wrapper {
+    display: flex;
+    position: absolute;
+    transition: transform 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+.wrapper .item {
+    flex: 1;
+    min-width: 210px;
+    transition: transform 400ms cubic-bezier(0.455, 0.03, 0.515, 0.955);
+    transform: scale(0.8);
+}
+
+.active-item-0 #item-0 {
+    transform: scale(1);
+}
+
+.active-item-1 #item-1 {
+    transform: scale(1);
+}
+
+.active-item-2 #item-2 {
+    transform: scale(1);
+}
+
+.active-item-3 #item-3 {
+    transform: scale(1);
+}
+
+.active-item-4 #item-4 {
+    transform: scale(1);
+}
+
+.active-item-5 #item-5 {
+    transform: scale(1);
+}
+
+.active-item-6 #item-6 {
+    transform: scale(1);
+}
+
+.active-item-7 #item-7 {
+    transform: scale(1);
+}
+
+.active-item-8 #item-8 {
+    transform: scale(1);
+}
+
+.active-item-9 #item-9 {
+    transform: scale(1);
+}
+
+.status {
+    display: flex;
+    justify-content: center;
+}
+
+.point {
+    height: 10px;
+    width: 10px;
+    background-color: #d9d9e8;
+    margin: 0 5px;
+    border-radius: 50%;
+    transition: background-color 150ms linear;
+    cursor: pointer;
+}
+
+.active-point {
+    background-color: #873dff;
+}
